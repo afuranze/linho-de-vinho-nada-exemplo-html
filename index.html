@@ -1,1 +1,20 @@
-<h1>Hello World!</h1>
+<h1>Hello World</h1>
+
+<div id="helioCheckoutContainer"></div>
+
+<script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    window.helioCheckout(
+      document.getElementById("helioCheckoutContainer"),
+      {
+        paylinkId: "6908fd27300f11d3339711d3",
+        theme: {"themeMode":"dark"},
+        primaryColor: "#6400CC",
+        neutralColor: "#5A6578",
+        amount: "5.99",
+      }
+    );
+  });
+</script>
